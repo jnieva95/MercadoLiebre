@@ -1,0 +1,381 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  header {
+    background-color: #EAC926;
+    width: 100vw;
+    padding: 20px;
+    margin: auto;
+  }
+  
+  .top-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+    max-width: 1200px;
+    text-align: center;
+    margin:auto
+  }
+  
+  .buscador {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+
+  .input{
+    border: solid 1px var(--light-gray);
+    display: block;
+    width: 100%;
+    padding: 7px 35px 7px 7px;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 1em;
+}
+
+.lupa-boton{
+    position: absolute;
+    right: 2px;
+    height: 60%;
+    background-color: #ffffff;
+    border: none;
+    border-left: solid 1px var(--light-gray);
+    color: var(--gray);
+    cursor: pointer;
+}
+  
+  .banner {
+    width: 100vw;
+  }
+  
+ nav {
+    display: none;
+ }
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222222;
+    padding: 5px 0;
+    font-size: 14px;
+}
+  
+  header .buscador .input {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #666;
+  }
+  
+  header .buscador .lupa i {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #666;
+  }
+  
+  header .burger-menu i {
+    color: #fff;
+    background-color: #1259c3;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 5px;
+  }
+  
+  header .burger-menu {
+    text-align: center;
+  }
+  
+  header nav {
+    display: none;
+  }
+  
+main {
+    margin: 0 auto;
+    width: 90vw;
+}
+
+main section article {
+    margin-bottom: 10px;
+    max-width: 1200px;
+    width: 100vw;
+    padding: 15px;
+    margin: auto;
+    margin-top: -4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main section article img{
+    width: 100%;
+}
+
+.info-article{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.info-article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.precio{
+    width: 30%;
+}
+
+.descuento{
+    width: 70%;
+}
+  footer {
+    background-color: #fff;
+  }
+  
+  footer article {
+    margin-top: 100px;
+  }
+  
+  footer article.Payment-Options i {
+    color: #1259c3;
+    font-size: 50px;
+  }
+  
+  footer article.Payment-Options {
+    text-align: center;
+  }
+  
+  footer article.Payment-Options h4 {
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  footer article.Payment-Options p {
+    color: #666;
+    margin-top: 1px;
+    font-size: 16px;
+  }
+  
+  footer article.Delivery-Type i {
+    color: #1259c3;
+    font-size: 50px;
+  }
+  
+  footer article.Delivery-Type {
+    text-align: center;
+  }
+  
+  footer article.Delivery-Type h4 {
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  footer article.Delivery-Type p {
+    color: #666;
+    margin-top: 1px;
+    font-size: 16px;
+  }
+  
+  footer article.Free-Returns i {
+    color: #1259c3;
+    font-size: 50px;
+  }
+  
+  footer article.Free-Returns {
+    text-align: center;
+  }
+  
+  footer article.Free-Returns h4 {
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  footer article.Free-Returns p {
+    color: #666;
+    margin-top: 1px;
+    font-size: 16px;
+  }
+  
+  footer article.Copyright p {
+    color: #666;
+    text-align: center;
+  }
+  
+
+  #formulario-registro {
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}
+
+#formulario-login {
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+}
+
+.formularios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.text-field {
+    padding: 5px;
+}
+
+.selecciones {
+    display: flex;
+    flex-direction: column;
+}
+
+.botonForm {
+    width: 80px;
+    margin-top: 10px;
+}
+
+.botonSubmit {
+    background-color: green;
+    color: #fff;
+}
+
+.botonReset {
+    background-color: red;
+    color: #fff;
+}
+.botonInicio{
+    background-color: green;
+    color: #fff;
+    width: 100%;
+}
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+  .desc-prod {
+    display: none;
+  }
+
+@media(min-width: 361px){
+    .burger-menu {
+        display: none;
+    }
+    .contenedor-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 20%;
+    }
+    .destacado {
+        text-align: right;
+        width: 30%;
+        font-size: 11px;
+    }
+    .buscador {
+        display: flex;
+        align-items: center;
+        width: 30%;
+    }
+    .buscador-input {
+        font-size: 16px;
+        width: 500px;
+    }
+    .listas{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    .listas ul {
+        display: flex;
+    }
+    .listas li {
+        margin: 0 5px;
+        font-size: 11px;
+    }
+    .listas a {
+        font-size: 11px;
+    }
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+        width: 45%;
+    }
+        header nav{
+            display:flex;
+            justify-content: space-between;
+    }
+        header div.burger-menu{
+            display: none;
+    }
+
+    .products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+ .desc-prod {
+    display:block;
+  }
+    
+}
+
+@media (min-width: 768px) {
+    main section article{
+        width: 22.5%;
+    }
+  
+}
